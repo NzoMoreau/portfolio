@@ -15,27 +15,27 @@ export const Contact = () => {
       <div className="flex max-md:flex-col w-full gap-4">
         <Infos
           className="flex-1"
-          url="https://twitter.com/NzoMoreauDev"
-          name="Enzo"
+          url="tel:0652524562"
+          name="06-52-52-45-62"
           image="/img/PPImg.jpg"
-          mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
-          description="test"
-        />
-        <Infos
-          className="flex-1"
-          url="https://fr.linkedin.com/in/enzo-moreau-516701208"
-          name="Enzo"
-          image="/img/PPImg.jpg"
-          mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
-          description="test"
+          mediumImage="/img/PhoneIOSImg.png"
+          description="Contactez-moi"
         />
         <Infos
           className="flex-1"
           url="mailto:enzo.moreau1710@gmail.com"
-          name="c@gmail.com"
+          name="enzo.moreau1710@gmail.com"
           image="/img/PPImg.jpg"
-          mediumImage="/img/EmailImg.png"
-          description="envoyer moi un mail"
+          mediumImage="/img/MailIOSImg.png"
+          description="Envoyer moi un mail"
+        />
+        <Infos
+          className="flex-1"
+          url=""
+          name="5 rue letort"
+          image="/img/PPImg.jpg"
+          mediumImage="/img/LocaliserIOSImg.png"
+          description="Localisation à Paris 18"
         />
       </div>
     </Section>

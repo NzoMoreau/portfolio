@@ -1,6 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
-import { Code, MessageCircle, Rss, StickyNote } from "lucide-react";
+import {
+  Code,
+  Contact,
+  MessageCircle,
+  Rss,
+  StickyNote,
+  User,
+} from "lucide-react";
 import { Projets, ProjetsProps } from "./Projets";
 import { Experiences, ExperiencesProps } from "./Experiences";
 import { Infos } from "./Infos";
@@ -10,7 +17,7 @@ export const Status = () => {
     <Section className="flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full">
         <Card className="w-full p-4 flex flex-col gap-2 w-full">
-          <p className="text-lg text-muted-foreground">Projets</p>
+          <p className="text-lg text-muted-foreground">Projets personnels</p>
           <div className="flex flex-col gap-4">
             {PROJETS.map((projets, index) => (
               <Projets
@@ -18,7 +25,7 @@ export const Status = () => {
                 Logo={projets.Logo}
                 title={projets.title}
                 description={projets.description}
-                url="/"
+                url={projets.url}
               />
             ))}
           </div>
@@ -33,7 +40,7 @@ export const Status = () => {
             ))}
           </div>
         </Card>
-        <Card className="p-4 flex-1 flex flex-col gap-2 ">
+        {/* <Card className="p-4 flex-1 flex flex-col gap-2 ">
           <p className="text-lg text-muted-foreground">Infos</p>
           <Infos
             name="Enzo"
@@ -47,7 +54,7 @@ export const Status = () => {
             mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
             description="test"
           />
-        </Card>
+        </Card> */}
       </div>
     </Section>
   );
@@ -55,28 +62,11 @@ export const Status = () => {
 
 const PROJETS: ProjetsProps[] = [
   {
-    Logo: Code,
-    title: "Codeline",
-    description: "A platform for developers to share their knowledge.",
-    url: "/",
-  },
-  {
-    Logo: StickyNote,
-    title: "Title",
-    description: "lorem",
-    url: "/",
-  },
-  {
-    Logo: Rss,
-    title: "Title",
-    description: "lorem",
-    url: "/",
-  },
-  {
-    Logo: MessageCircle,
-    title: "Title",
-    description: "lorem",
-    url: "/",
+    Logo: Contact,
+    title: "Portfolio",
+    description:
+      "Site en React afin de présenter mon parcours tout en apprenant le langage.",
+    url: "https://github.com/NzoMoreau/portfolio",
   },
 ];
 
@@ -91,10 +81,10 @@ const EXPERIENCES: ExperiencesProps[] = [
   },
   {
     image: "/img/CerfranceImg.png",
-    title: "Web & Co 2.0",
-    role: "Développeur Full Stack",
-    date: "2021 - Present",
-    url: "https://www.webandco2-0.fr/",
+    title: "Cerfrance",
+    role: "Développeur",
+    date: "2021",
+    url: "https://www.cerfrance.fr/",
     badge: "Stage",
   },
 ];
