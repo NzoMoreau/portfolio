@@ -32,7 +32,7 @@ export const Contact = () => {
         <Infos
           className="flex-1"
           url=""
-          name="5 rue letort"
+          name="31 rue letort"
           image="/img/PPImg.jpg"
           mediumImage="/img/LocaliserIOSImg.png"
           description="Localisation à Paris 18"
